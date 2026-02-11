@@ -1,0 +1,317 @@
+/* MAIN CSS */
+
+html,
+body {
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  color: azure;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+header {
+  margin: 0;
+}
+
+/* HEADER & TITLE */
+
+.logo {
+  width: 6rem;
+  height: auto;
+}
+
+.gradient-background {
+  min-height: 100vh;
+  background: linear-gradient(225deg, #0e0156, #100017, #450278);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  background-color: #1000173b;
+  padding: 20px 0px;
+  color: azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0rem;
+}
+
+.arrow {
+  margin-top: 9rem;
+  width: 3rem;
+  height: auto;
+  animation: bounce 1s infinite;
+}
+
+.arrow:hover {
+  filter: invert(42%) sepia(90%) saturate(1352%) hue-rotate(210deg)
+    brightness(100%) contrast(119%) drop-shadow(0px 0px 4px rgb(255, 255, 255));
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(25%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.title h1 {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  font-size: 9rem;
+  margin: 0.5rem;
+  text-shadow: 0px 0px 5px white;
+}
+
+.title p {
+  font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgba(240, 255, 255, 0.845);
+}
+
+/* PRESENTATION & SKILLS CARDS*/
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.competences {
+  background-color: #100017db;
+  box-shadow: 0px 0px 5px #bb88dade;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+  width: fit-content;
+  height: auto;
+  border-radius: 2rem;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-content h3 {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #dabcec;
+  margin-bottom: 1rem;
+}
+
+.portrait {
+  height: 13rem;
+  width: auto;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 3px #ffffff;
+  margin-inline: 1rem;
+  margin-top: 1.5rem;
+}
+
+.competences h2 {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  font-size: 4.5rem;
+  margin: 0.5rem;
+  text-shadow: 0px 0px 5px white;
+}
+
+.hard-skills {
+  display: inline;
+  width: 20rem;
+  height: auto;
+  text-align: center;
+}
+.skills-img img {
+  width: 4.5rem;
+  height: auto;
+  margin-inline: 0.5rem;
+}
+
+.soft-skills {
+  display: inline;
+  width: 20rem;
+  height: auto;
+  text-align: center;
+}
+
+.soft-skills ul {
+  margin: 2rem 0rem;
+  padding: 0;
+}
+.soft-skills li {
+  list-style: none;
+  font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.soft-skills li:nth-of-type(odd) {
+  font-weight: 600;
+}
+
+.presentation {
+  background-color: #100017db;
+  box-shadow: 0px 0px 5px #bb88dade;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+
+.presentation h2 {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  font-size: 4rem;
+  margin: 0rem;
+  text-shadow: 0px 0px 5px white;
+}
+
+.presentation img {
+  width: 13rem;
+  height: 17rem;
+  padding: 1rem;
+}
+
+.presentation p {
+  width: 19rem;
+  color: #dabcec;
+}
+
+.projets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projets h1 {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  font-size: 6rem;
+  margin: 0.5rem;
+  text-shadow: 0px 0px 5px white;
+  justify-content: center;
+}
+
+/*POSTERS*/
+
+.posters{
+display: inline;
+margin-inline:2rem;
+justify-content: center;
+}
+
+.posters h2{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  font-size: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(57, 21, 82, 0.754);
+  color: #ffffff;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0px 0px 5px #d79af8;
+}
+
+.posters-content img{
+width: 20rem;
+height: 28rem;
+margin:0.8rem;
+z-index: 1;
+transition: transform 0.2s ease-out;
+}
+
+.posters-content img:hover{
+transform: scale(1.2);
+z-index: 2;
+
+}
+
+/*ANIMATIONS*/
+
+.animations h2{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+  font-size: 3rem;
+  background-color: rgba(57, 21, 82, 0.754);
+  color: #ffffff;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0px 0px 5px #d79af8;
+}
+
+
+
